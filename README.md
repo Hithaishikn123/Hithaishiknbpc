@@ -18,6 +18,7 @@ int main() {
 }
 
 //wacp to find a area of circle
+
 #include <stdio.h>
 #include <math.h>
 int main()
@@ -31,6 +32,25 @@ int main()
   area = 3.14159*radius*radius;
 
   printf("Area of the circle = %.2f\n", area);  // printing upto two decimal places
+
+  return 0;
+}
+
+
+//wacp to print largest of twonumbers using if statement
+#include<stdio.h>
+
+int main ()
+{
+  int num1, num2;
+  num1=12,num2=13;
+
+  if (num1 == num2)
+    printf("both are equal");
+  else if (num1 > num2) 
+    printf("%d is greater", num1);
+  else
+    printf("%d is greater", num2);
 
   return 0;
 }
