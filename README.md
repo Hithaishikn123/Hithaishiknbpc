@@ -1,5 +1,5 @@
 # Hithaishiknbpc
-//wacp to read 2 nums and add
+//1 wacp to read 2 nums and add
 
 
 #include <stdio.h>
@@ -18,7 +18,7 @@ int main() {
 }
 
 
-//wacp to find a area of circle
+//2 wacp to find a area of circle
 
 #include <stdio.h>
 #include <math.h>
@@ -39,7 +39,7 @@ int main()
 
 
 
-//wacp to print largest of twonumbers using if statement
+//3 wacp to print largest of twonumbers using if statement
 #include<stdio.h>
 int main ()
 {
@@ -59,7 +59,7 @@ int main ()
 
 
 
-//wacp to perform multiplication of 2 float values
+//4 wacp to perform multiplication of 2 float values
 
 #include <stdio.h>
 int main() {
@@ -77,7 +77,7 @@ int main() {
 }
 
 
-//wacp to cheack the number is odd or even
+//5 wacp to cheack the number is odd or even
 #include <stdio.h>
 int main() {
     int num;
@@ -94,7 +94,7 @@ int main() {
 }
 
 
-//wacp to check if a number is divisible by 5
+//6 wacp to check if a number is divisible by 5
 
 #include <stdio.h>
  
@@ -116,7 +116,7 @@ void main()
         }
     }
     
-    //wacp to check if a number is divisible by 2
+    //7 wacp to check if a number is divisible by 2
     #include<stdio.h>
 int main()
 {
@@ -141,7 +141,7 @@ int main()
 }
 
 
-//wacp to print the power of a number without using math.h
+//8 wacp to print the power of a number without using math.h
 
 
 #include <stdio.h>
@@ -178,7 +178,7 @@ int main() {
     return 0;
 }
 
-//c program to print the message hello if the number divisible by 2 and print the message world if the number divisible by 3,print the message hello world if the number is divisible by both 2 and 3
+//9 c program to print the message hello if the number divisible by 2 and print the message world if the number divisible by 3,print the message hello world if the number is divisible by both 2 and 3
 #include <stdio.h>
 
 int main() {
@@ -199,5 +199,101 @@ int main() {
 }
 
 
-//
+// 10 c program to generate odd number without using loop
+#include <stdio.h>
+
+void generateOdd(int n) {
+    if (n <= 0) {
+        return;
+    }
+
+    generateOdd(n - 1);
+
+    if (n % 2 != 0) {
+        printf("%d ", n);
+    }
+}
+
+int main() {
+    int limit;
+
+    printf("Enter the limit: ");
+    scanf("%d", &limit);
+
+    printf("Odd numbers up to %d: ", limit);
+    generateOdd(limit);
+    printf("\n");
+
+    return 0;
+}
+
+// 11 write a c++ program to print tables of 5
+#include <iostream>
+
+void printTableOf5(int limit) {
+    for (int i = 1; i <= limit; i++) {
+        std::cout << "5 x " << i << " = " << 5 * i << std::endl;
+    }
+}
+
+int main() {
+    int limit;
+
+    std::cout << "Enter the limit: ";
+    std::cin >> limit;
+
+    std::cout << "Table of 5 up to " << limit << ":" << std::endl;
+    printTableOf5(limit);
+
+    return 0;
+}
+
+// 12 write a c program to print tables of 5	
+	#include <stdio.h>
+
+void printTableOf5(int limit) {
+    for (int i = 1; i <= limit; i++) {
+        printf("5 x %d = %d\n", i, 5 * i);
+    }
+}
+
+int main() {
+    int limit;
+
+    printf("Enter the limit: ");
+    scanf("%d", &limit);
+
+    printf("Table of 5 up to %d:\n", limit);
+    printTableOf5(limit);
+
+    return 0;
+}
+			      
+// 13 wap  to generate numbers divisible by 2 and divisible by 3,but if the number is divisible by both 2 and 3 print the message pass			      
+#include <stdio.h>
+
+int main() {
+    int start, end;
+
+    printf("Enter the starting number: ");
+    scanf("%d", &start);
+
+    printf("Enter the ending number: ");
+    scanf("%d", &end);
+
+    printf("Numbers divisible by 2 and 3:\n");
+    for (int num = start; num <= end; num++) {
+        if (num % 2 == 0 && num % 3 == 0) {
+            printf("%d (Pass)\n", num);
+        } else if (num % 2 == 0) {
+            printf("%d\n", num);
+        }
+    }
+
+    return 0;
+}
+				    
+
+				    
+				    
 
