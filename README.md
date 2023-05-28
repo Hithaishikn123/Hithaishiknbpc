@@ -1,7 +1,6 @@
 # Hithaishiknbpc
 //1 wacp to read 2 nums and add
 
-
 #include <stdio.h>
 int main() {    
 
